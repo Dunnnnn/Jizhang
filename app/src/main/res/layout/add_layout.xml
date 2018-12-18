@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名称："
+            android:textSize="25sp"
+            android:paddingLeft="16dp"/>
+
+        <EditText
+            android:id="@+id/out_name"
+            android:layout_width="300sp"
+            android:layout_height="50dp"
+            android:hint="收支类型" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/out_typ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:text="账单类型"
+            android:textSize="25sp" />
+
+        <ToggleButton
+            android:id="@+id/typ_swi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="84dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/out_typ"
+            android:checked="true"
+            android:textOff="收入"
+            android:textOn="支出" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金额："
+            android:textSize="25sp"
+            android:paddingLeft="16dp"/>
+    <EditText
+        android:id="@+id/out_num"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:hint="金额"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/blank1"
+            android:layout_width="60dp"
+            android:layout_height="50dp" />
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:text="取消"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_toRightOf="@id/blank1"
+            />
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:text="确定"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_toLeftOf="@id/blank2"/>
+        <TextView
+            android:id="@+id/blank2"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

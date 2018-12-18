@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">几张记账</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">几张</string>
+    <string name="nav_header_subtitle">2018.12 BUAA MJTandZN</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_clear">清空所有记录</string>
+</resources>
