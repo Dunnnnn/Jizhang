@@ -1,4 +1,5 @@
-package com.jizhang.mjtzn.jizhang;
+package com.buaa.zhangnu.jizhang;
+
 
 import android.content.Context;
 import android.database.ContentObserver;
@@ -41,7 +42,7 @@ public class ScreenShotContentObserver extends ContentObserver{
                 int dataColumnIndex = cursor.getColumnIndex(MediaStore.Images.Media.DATA);
                 String path = cursor.getString(dataColumnIndex);
                 if(!previousPath.equals(path) && isScreenshot(path)){
-                    //Log.i("scrnshot", path);
+                    Log.i("scrnshot", path);
 
                     Util.getInstance().ocrwork.getRecognitionResultByImage(path);
 

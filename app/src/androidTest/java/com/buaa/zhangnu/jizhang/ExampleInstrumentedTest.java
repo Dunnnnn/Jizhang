@@ -1,4 +1,4 @@
-package com.jizhang.mjtzn.jizhang;
+package com.buaa.zhangnu.jizhang;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.jizhang.mjtzn.jizhang", appContext.getPackageName());
+        assertEquals("com.buaa.zhangnu.jizhang", appContext.getPackageName());
     }
 }

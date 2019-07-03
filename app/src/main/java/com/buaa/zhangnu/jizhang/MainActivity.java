@@ -1,4 +1,4 @@
-package com.jizhang.mjtzn.jizhang;
+package com.buaa.zhangnu.jizhang;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -27,8 +27,6 @@ import android.widget.LinearLayout;
 import android.widget.TextClock;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.util.LinkedList;
 
 public class MainActivity extends AppCompatActivity{
 
@@ -139,11 +137,11 @@ public class MainActivity extends AppCompatActivity{
     private void toggleNotificationListenerService() {
         PackageManager pm = getPackageManager();
         pm.setComponentEnabledSetting(
-                new ComponentName(this, com.jizhang.mjtzn.jizhang.myNotificationListenerService.class),
+                new ComponentName(this, myNotificationListenerService.class),
                 PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
 
         pm.setComponentEnabledSetting(
-                new ComponentName(this, com.jizhang.mjtzn.jizhang.myNotificationListenerService.class),
+                new ComponentName(this, myNotificationListenerService.class),
                 PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
     }
 

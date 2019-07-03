@@ -1,4 +1,4 @@
-package com.jizhang.mjtzn.jizhang;
+package com.buaa.zhangnu.jizhang;
 
 import java.util.LinkedList;
 import java.util.List;

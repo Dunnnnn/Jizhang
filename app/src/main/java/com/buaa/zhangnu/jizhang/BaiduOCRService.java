@@ -1,4 +1,5 @@
-package com.jizhang.mjtzn.jizhang;
+package com.buaa.zhangnu.jizhang;
+
 
 import io.reactivex.Observable;
 import retrofit2.http.Field;

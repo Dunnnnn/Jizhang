@@ -1,4 +1,4 @@
-package com.jizhang.mjtzn.jizhang;
+package com.buaa.zhangnu.jizhang;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

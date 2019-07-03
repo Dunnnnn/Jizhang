@@ -1,4 +1,4 @@
-package com.jizhang.mjtzn.jizhang;
+package com.buaa.zhangnu.jizhang;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -45,7 +45,7 @@ public class myNotificationListenerService extends NotificationListenerService {
 
             if(title==null && content==null){ return ; }
 
-            //Log.i("包名:", sbn.getPackageName() + "标题：" + title + "内容:" + content);
+            Log.i("包名:", sbn.getPackageName() + "标题：" + title + "内容:" + content);
 
             RecordBean record=Util.getInstance().notification2record(title,content);
             if(record.getAmount()<0.00001 && record.getAmount()>-0.00001){

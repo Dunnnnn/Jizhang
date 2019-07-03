@@ -1,4 +1,5 @@
-package com.jizhang.mjtzn.jizhang;
+package com.buaa.zhangnu.jizhang;
+
 
 import android.content.Context;
 import android.util.Log;
@@ -102,7 +103,7 @@ public class Util {
             return res;
         }
         //微信钱包收款
-        if( supercontains(words,new String[]{"交易详情","已收钱","转账时间"}) ){
+        if( supercontains(words,new String[]{"转账详情","已收钱","转账时间"}) ){
             for(int i=0;i<words.size();i++){
                 if(words.get(i).contains("已收钱")){
                     res.setAmount(str2float(words.get(i+1)));

@@ -1,4 +1,4 @@
-package com.jizhang.mjtzn.jizhang;
+package com.buaa.zhangnu.jizhang;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -17,7 +17,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class OCRwork {
     private BaiduOCRService baiduOCRService;
-    private static final String ACCESS_TOKEN = "24.a4e769f75463d19e6f9348a15e1df85d.2592000.1547286740.282335-15152730";
+    private static final String ACCESS_TOKEN = "24.65f4c515d6070154271297bd6ceb52a3.2592000.1564732570.282335-16704261";
 
     public OCRwork() {
         //Log.d("OCR","init");
@@ -36,6 +36,7 @@ public class OCRwork {
             public void run() {
                 Bitmap bitmap = BitmapFactory.decodeFile(path);
                 String encodeResult = bitmapToString(bitmap);
+                Log.i("flag1:", "1111");
                 baiduOCRService.getRecognitionResultByImage(ACCESS_TOKEN, encodeResult)
                         .subscribeOn(Schedulers.io())
                         .observeOn(AndroidSchedulers.mainThread())
@@ -47,6 +48,7 @@ public class OCRwork {
                             @Override
                             public void onNext(RecognitionResultBean recognitionResultBean) {
                                 RecordBean record=Util.getInstance().imageInfo2Record(recognitionResultBean);
+                                Log.i("flag2:", "2222"+record.toString());
                                 if(record.getAmount()<0.00001 && record.getAmount()>-0.00001){
                                     return;
                                 }

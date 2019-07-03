@@ -1,4 +1,5 @@
-package com.jizhang.mjtzn.jizhang;
+package com.buaa.zhangnu.jizhang;
+
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
