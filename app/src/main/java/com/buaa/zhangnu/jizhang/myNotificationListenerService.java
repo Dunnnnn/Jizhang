@@ -33,6 +33,7 @@ public class myNotificationListenerService extends NotificationListenerService {
         if (notification == null) {
             return;
         }
+        Log.i("包名：",sbn.getPackageName());
         if(!isLegalPackageName(sbn.getPackageName())){
             return;
         }

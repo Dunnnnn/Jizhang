@@ -47,8 +47,8 @@ public class OCRwork {
 
                             @Override
                             public void onNext(RecognitionResultBean recognitionResultBean) {
+                                Log.i("flag2:", "2222"+recognitionResultBean.toString());
                                 RecordBean record=Util.getInstance().imageInfo2Record(recognitionResultBean);
-                                Log.i("flag2:", "2222"+record.toString());
                                 if(record.getAmount()<0.00001 && record.getAmount()>-0.00001){
                                     return;
                                 }
